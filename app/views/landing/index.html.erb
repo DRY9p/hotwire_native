@@ -6,3 +6,10 @@
   data-bridge--form-target="submit"
   data-bridge-title="Авторизация"> 
 </form>
+
+<%= link_to "Link title", "#", data: {
+  controller: "bridge--alert",
+  action: "bridge--alert#show",
+  bridge_title: "Overridden Alert Title"
+} %>
+
